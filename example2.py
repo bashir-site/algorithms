@@ -38,13 +38,33 @@ def find_third_max_element2(list1: list) -> int:
         Реализуй алгоритм, для поиска 3-его максимального
         элемента (бронза) + выпиши сложность.
     """
-    pass
+    if len(list1)<=2:
+        return None
+    
+    max1 = max2 = max3 = list1[0]
+    
+    for num in list1:
+        if num > max1:
+            max1 = num
+            print(max1)
 
-test_func(find_third_max_element1)
+    for num in list1:
+        if max1 > num > max2:
+            max2 = num
+            print(max2)
+            
+    for num in list1:
+        if max1 > max2 > num > max3:
+            max3 = num
+            print(max3)
 
+    return max3
+
+
+test_func(find_third_max_element2)
 
 list1 = [12, 84, -7, -13, 0, 321]
-print(find_third_max_element1(list1))
+print(find_third_max_element2(list1))
 
 
 
