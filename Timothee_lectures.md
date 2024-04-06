@@ -12,4 +12,4 @@
 
 ## 4.3. Структурное программирование 
 
-![Screenshot](img3.png)
+![Screenshot](img2.png)
